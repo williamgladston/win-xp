@@ -906,3 +906,496 @@ html, body, #root {
 .notification-enter {
   animation: notification-fade-in 0.3s ease-out;
 }
+
+/* ============================================================
+   INTERNET EXPLORER 6 — Windows XP Authentic Styles
+   ============================================================ */
+
+/* Container */
+.ie-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ECE9D8;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  font-size: 11px;
+}
+
+/* ===== IE MENU BAR ===== */
+.ie-menubar {
+  display: flex;
+  align-items: center;
+  background: #ECE9D8;
+  padding: 1px 2px;
+  border-bottom: 1px solid #ACA899;
+  gap: 0;
+}
+.ie-menubar-item {
+  padding: 2px 7px;
+  cursor: pointer;
+  font-size: 11px;
+  color: #000;
+  border-radius: 2px;
+}
+.ie-menubar-item:hover {
+  background: #316AC5;
+  color: #fff;
+}
+
+/* ===== IE TOOLBAR ===== */
+.ie-toolbar {
+  display: flex;
+  align-items: center;
+  background: #ECE9D8;
+  padding: 2px 3px;
+  border-bottom: 1px solid #ACA899;
+  gap: 1px;
+  min-height: 38px;
+}
+.ie-toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: 'Tahoma', sans-serif;
+  color: #000;
+  height: 32px;
+}
+.ie-toolbar-btn:hover {
+  border-color: #C1D2EE;
+  background: linear-gradient(180deg, #FAFBFD 0%, #D6DFF7 100%);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.6);
+}
+.ie-toolbar-btn:active {
+  background: #C1D2EE;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.15);
+}
+.ie-toolbar-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+  pointer-events: none;
+}
+.ie-toolbar-btn img {
+  width: 24px;
+  height: 24px;
+}
+.ie-toolbar-btn span {
+  font-size: 11px;
+}
+
+/* Back/Forward buttons (larger with dropdown caret) */
+.ie-nav-btn {
+  padding: 2px 3px 2px 4px;
+}
+.ie-nav-dropdown {
+  font-size: 8px;
+  margin-left: 1px;
+  color: #444;
+}
+
+/* Toolbar separator */
+.ie-toolbar-separator {
+  width: 1px;
+  height: 26px;
+  background: #ACA899;
+  margin: 0 3px;
+  flex-shrink: 0;
+}
+
+/* Throbber (animated Windows logo) */
+.ie-throbber {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding-right: 4px;
+}
+.ie-throbber img {
+  width: 24px;
+  height: 24px;
+}
+.ie-throbber-spin {
+  animation: ie-spin 1s linear infinite;
+}
+@keyframes ie-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===== IE ADDRESS BAR ROW ===== */
+.ie-address-row {
+  display: flex;
+  align-items: center;
+  background: #ECE9D8;
+  padding: 2px 4px;
+  border-bottom: 1px solid #ACA899;
+  gap: 4px;
+  min-height: 26px;
+}
+.ie-address-label {
+  font-size: 11px;
+  color: #000;
+  padding: 0 4px;
+  flex-shrink: 0;
+}
+.ie-address-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #7F9DB9;
+  background: #fff;
+  height: 22px;
+  padding: 0 2px;
+  gap: 3px;
+}
+.ie-address-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.ie-address-field input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-family: 'Tahoma', sans-serif;
+  background: transparent;
+  padding: 0 2px;
+}
+.ie-go-btn {
+  height: 18px;
+  padding: 0 8px;
+  background: var(--xp-button-face);
+  border: 1px solid #7F9DB9;
+  font-size: 11px;
+  font-family: 'Tahoma', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.ie-go-btn:hover {
+  background: #DFDCD0;
+}
+.ie-links-label {
+  font-size: 11px;
+  color: #000;
+  padding: 0 2px;
+  flex-shrink: 0;
+  border-left: 1px solid #ACA899;
+  padding-left: 6px;
+}
+.ie-links-chevron {
+  color: #666;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* ===== IE CONTENT AREA ===== */
+.ie-content {
+  flex: 1;
+  overflow: auto;
+  background: #FFFFFF;
+}
+.ie-page {
+  min-height: 100%;
+}
+
+/* Navigation links bar (in-page) */
+.ie-nav-links {
+  background: #E8E4D8;
+  padding: 5px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid #C0B9A0;
+  font-size: 11px;
+}
+.ie-nav-link {
+  color: #0066CC;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.ie-nav-link:hover {
+  text-decoration: underline;
+  color: #0044AA;
+}
+.ie-nav-link.active {
+  font-weight: bold;
+  color: #003399;
+}
+.ie-nav-divider {
+  color: #999;
+  font-size: 10px;
+}
+
+/* Page body padding */
+.ie-page-body {
+  padding: 16px 20px 24px;
+}
+
+/* Hero banner */
+.ie-hero {
+  background: linear-gradient(135deg, #003399 0%, #0055CC 40%, #0077DD 100%);
+  padding: 1px;
+}
+.ie-hero-inner {
+  background: linear-gradient(135deg, rgba(0,51,153,0.9) 0%, rgba(0,85,204,0.85) 40%, rgba(0,119,221,0.9) 100%);
+  padding: 24px 28px;
+  text-align: center;
+}
+.ie-hero-title {
+  font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0 0 6px;
+  letter-spacing: 0.5px;
+}
+.ie-hero-subtitle {
+  font-size: 12px;
+  color: #B0D4FF;
+  margin: 0;
+}
+
+/* Section titles */
+.ie-section-title {
+  font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #003399;
+  margin: 0 0 4px;
+}
+.ie-page-title {
+  font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #003399;
+  margin: 0;
+}
+.ie-sub-heading {
+  font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #003399;
+  margin: 14px 0 6px;
+}
+.ie-hr {
+  border: none;
+  border-top: 1px solid #C0C0C0;
+  margin: 6px 0 14px;
+}
+
+/* Home page table layout */
+.ie-home-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ie-home-main {
+  vertical-align: top;
+  padding-right: 20px;
+}
+.ie-home-sidebar {
+  width: 200px;
+  vertical-align: top;
+}
+
+/* About table */
+.ie-about-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ie-about-main {
+  vertical-align: top;
+  padding-right: 20px;
+}
+.ie-about-sidebar {
+  width: 220px;
+  vertical-align: top;
+}
+
+/* Sidebar boxes */
+.ie-sidebar-box {
+  background: #F0F0F0;
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.ie-sidebar-title {
+  font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #003399;
+  margin: 0 0 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #C0C0C0;
+}
+.ie-sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ie-sidebar-links li {
+  padding: 3px 0;
+}
+.ie-sidebar-links li::before {
+  content: '►';
+  color: #003399;
+  font-size: 7px;
+  margin-right: 6px;
+}
+.ie-sidebar-text {
+  font-size: 11px;
+  color: #333;
+  line-height: 1.6;
+  margin: 2px 0;
+}
+
+/* Links */
+.ie-link {
+  color: #0066CC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ie-link:hover {
+  color: #CC3300;
+}
+.ie-link:visited {
+  color: #800080;
+}
+
+/* Home project items */
+.ie-home-project {
+  margin-bottom: 12px;
+}
+.ie-project-tech {
+  font-size: 11px;
+  color: #666;
+}
+.ie-project-desc {
+  font-size: 11px;
+  color: #444;
+  margin: 2px 0 0;
+}
+
+/* Project cards */
+.ie-project-card {
+  border: 1px solid #C0C0C0;
+  margin-bottom: 14px;
+  background: #FAFAFA;
+}
+.ie-project-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, #E8E8E8 0%, #D8D8D8 100%);
+  padding: 6px 10px;
+  border-bottom: 1px solid #C0C0C0;
+}
+.ie-project-name {
+  font-family: 'Trebuchet MS', 'Tahoma', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #003399;
+  margin: 0;
+}
+.ie-project-meta {
+  padding: 6px 10px;
+  font-size: 11px;
+  color: #333;
+  border-bottom: 1px solid #E0E0E0;
+}
+.ie-project-points {
+  padding: 6px 10px 8px 28px;
+  margin: 0;
+  font-size: 11px;
+  color: #333;
+  line-height: 1.7;
+}
+.ie-project-points li {
+  margin-bottom: 2px;
+}
+
+/* Body text */
+.ie-body-text {
+  font-size: 11px;
+  color: #333;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+.ie-body-list {
+  font-size: 11px;
+  color: #333;
+  line-height: 1.7;
+  padding-left: 18px;
+  margin: 0 0 6px;
+}
+.ie-body-list li {
+  margin-bottom: 6px;
+}
+
+/* Contact table */
+.ie-contact-table {
+  border-collapse: collapse;
+}
+.ie-contact-table td {
+  padding: 6px 8px;
+  font-size: 11px;
+  vertical-align: middle;
+}
+.ie-contact-label {
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* ===== IE STATUS BAR ===== */
+.ie-statusbar {
+  display: flex;
+  align-items: center;
+  background: #ECE9D8;
+  border-top: 1px solid #ACA899;
+  min-height: 22px;
+  padding: 0;
+  flex-shrink: 0;
+  font-size: 11px;
+  color: #444;
+}
+.ie-status-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ie-status-zone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+  border-left: 1px solid #ACA899;
+  height: 100%;
+  flex-shrink: 0;
+}
+.ie-status-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.ie-status-loading {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ACA899;
+  border-top: 2px solid #003399;
+  border-radius: 50%;
+  animation: ie-spin 0.8s linear infinite;
+}
