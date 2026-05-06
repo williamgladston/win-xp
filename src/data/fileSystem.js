@@ -13,6 +13,7 @@ export const initialFileSystem = {
         },
       },
     },
+
     'My Documents': {
       type: 'folder',
       children: {
@@ -21,67 +22,59 @@ export const initialFileSystem = {
 
         'resume.txt': {
           type: 'file',
-          content: `V. WILLIAM GLADSTON - SOFTWARE DEVELOPER
-==========================================
+          content: `V. WILLIAM GLADSTON
++91-7014825243 | williamgladston4@gmail.com
+LinkedIn | GitHub | Portfolio
 
-ABOUT ME
---------
+OBJECTIVE
+---------
 Aspiring Software Developer with strong problem-solving skills and experience in full-stack web development and backend systems.
-Skilled in building scalable applications using React, Node.js, and MongoDB, with a growing interest in AI-driven solutions.
-
-SKILLS
-------
-• Languages: Python, C++, JavaScript, Java, SQL
-• Frameworks: React.js, Node.js, Express.js
-• Databases: MongoDB, MySQL
-• Tools: Git, GitHub, Firebase, Postman
-
-EXPERIENCE
-----------
-Software Development Intern - Blue Stocks (Jun 2025 - Jul 2025)
-• Developed backend modules using Node.js
-• Improved data retrieval efficiency by ~25%
-• Reduced API response time by ~30%
-
-AI & Cloud Trainee - Edunet Foundation (Jul 2025 - Aug 2025)
-• Worked on AI & cloud-based workflows using IBM Cloud
-• Implemented real-world ML and deployment concepts
+Skilled in building scalable applications using React, Node.js, and MongoDB with growing interest in AI-driven solutions.
 
 EDUCATION
 ---------
-B.Tech Computer Science
-BK Birla Institute of Engineering & Technology (2023 - 2027)
+B.Tech in Computer Science (2023 – 2027)
+BK Birla Institute of Engineering & Technology, Pilani
+
+EXPERIENCE
+----------
+Software Development Intern - Blue Stocks (Jun 2025 – Jul 2025)
+• Developed backend modules using Node.js improving efficiency by 25%
+• Optimized database queries reducing API response time by 30%
+
+AI & Cloud Trainee - Edunet Foundation (Jul 2025 – Aug 2025)
+• Hands-on AI & cloud training using IBM Cloud
+• Worked on deployment and AI-based workflows
+• Gained real-world ML exposure
+
+PROJECTS
+--------
+AI-Powered Code Reviewer
+• AI-based code analysis using Gemini API
+• Reduced review time by 40%
+
+Real-Time Collaboration App
+• WebSocket-based live collaboration system
+
+File Sharing Web Application
+• Secure file sharing with 24-hour expiry
+
+Bank Transaction System
+• Backend banking simulation with secure APIs
+
+SKILLS
+------
+Languages: Python, C++, JavaScript, Java, SQL
+Frameworks: React.js, Node.js, Express.js
+Databases: MongoDB, MySQL
+Tools: Git, GitHub, Firebase, Postman
 
 ACHIEVEMENTS
 ------------
 • GATE 2026 Qualified
 • 2nd Place - Smart India Hackathon 2025
-• Winner - Ideathon (IEI BITS Pilani 2024)
-• AWS Cloud Foundations Certified
-
-CONTACT
--------
-Email: williamgladston4@gmail.com
-GitHub: github.com/williamgladston
-Portfolio: williamgladston.github.io/win-xp/
-`,
-        },
-
-        'about-me.txt': {
-          type: 'file',
-          content: `Hi! I'm William 👋
-
-I'm a full-stack developer passionate about building real-world scalable applications and AI-powered tools.
-
-This Windows XP portfolio is one of my creative projects where I combined UI/UX with functionality.
-
-I enjoy working on:
-• Full-stack web apps
-• Backend systems & APIs
-• Real-time apps using WebSockets
-• AI-powered developer tools
-
-Feel free to explore everything here 
+• Winner - Ideathon (BITS Pilani 2024)
+• AWS Cloud Certified
 `,
         },
 
@@ -91,29 +84,39 @@ Feel free to explore everything here
 ===========
 
 1. AI-Powered Code Reviewer
-   Automates code review using AI (Gemini API)
-   Tech: MERN Stack, JWT
-   GitHub: github.com/williamgladston/ai-powered-code-optimization
+   MERN Stack, Gemini API
+   - AI-based code feedback system
+   - 200+ evaluations processed
+   - Reduced review time by 40%
 
-2. Real-Time Collaboration IDE
-   Live collaborative coding using WebSockets
-   Tech: React, Node.js, WebSocket
-   Live: ide-with-real-time-collabration-2.onrender.com
+2. Real-Time Collaboration App
+   React, Node.js, WebSocket
+   - Live collaboration system
+   - Real-time bidirectional communication
 
-3. File Sharing Web Application
-   Share files via link/email with 24-hour expiry
-   Tech: Node.js, Express, MongoDB, Multer
-   GitHub: github.com/williamgladston/Inshare
+3. File Sharing Web App
+   Node.js, MongoDB, Multer
+   - Secure link sharing (24hr expiry)
 
 4. Bank Transaction System
-   Simulates banking operations with secure APIs
-   Tech: Node.js, Express, MongoDB
-   Live: backend-ledger-t9p6.onrender.com
-
-5. Windows XP Portfolio (This Site!)
-   Interactive OS-style portfolio
-   Tech: React, Tailwind, GSAP
+   Node.js, MongoDB
+   - Simulated banking APIs
+   - 1000+ transactions handled
 `,
+        },
+
+        'about-me.txt': {
+          type: 'file',
+          content: `Hi! I'm William 👋
+
+I'm a full-stack developer focused on building:
+• Scalable backend systems
+• Real-time applications
+• AI-powered tools
+
+This Windows XP portfolio is a combination of creativity + engineering.
+
+Explore around 🚀`,
         },
       },
     },
@@ -124,7 +127,7 @@ Feel free to explore everything here
         'welcome.txt': {
           type: 'file',
           content:
-            'Welcome to William’s Windows XP Portfolio!\n\nDouble-click icons to explore projects, resume, and more 🚀',
+            'Welcome to William’s Windows XP Portfolio!\n\nExplore projects, resume, and more 🚀',
         },
       },
     },
@@ -136,45 +139,59 @@ Feel free to explore everything here
   },
 };
 
+/* ================= PROJECT DATA ================= */
+
 export const portfolioProjects = [
   {
     id: 1,
     title: 'AI-Powered Code Reviewer',
-    description:
-      'AI-based system that reviews code and provides optimization suggestions using Gemini API.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Gemini API', 'JWT'],
-    url: 'https://github.com/williamgladston/ai-powered-code-optimization',
+    tech: ['MERN Stack', 'Gemini API'],
+    github: 'https://github.com/williamgladston/ai-powered-code-optimization',
+    live: '#',
+    points: [
+      'Built to automate manual code review with AI feedback',
+      'Integrated Gemini API for code optimization suggestions',
+      'Processed 200+ evaluations reducing review time by 40%',
+      'Implemented JWT auth and dashboard tracking system'
+    ]
   },
   {
     id: 2,
-    title: 'Real-Time Collaboration IDE',
-    description:
-      'Live collaborative coding platform with real-time updates using WebSocket communication.',
-    tech: ['React', 'Node.js', 'WebSocket'],
-    url: 'https://ide-with-real-time-collabration-2.onrender.com',
+    title: 'Full Stack Real-Time Collaboration App',
+    tech: ['React.js', 'Node.js', 'WebSocket'],
+    github: 'https://github.com/williamgladston/IDE-with-real-time-collabration',
+    live: 'https://ide-with-real-time-collabration-2.onrender.com',
+    points: [
+      'Developed real-time collaborative system using WebSockets',
+      'Built dynamic React frontend',
+      'Implemented bidirectional communication',
+      'Designed scalable backend for concurrent users'
+    ]
   },
   {
     id: 3,
     title: 'File Sharing Web Application',
-    description:
-      'File sharing system with secure links and 24-hour expiration for downloads.',
     tech: ['Node.js', 'Express', 'MongoDB', 'Multer', 'EJS'],
-    url: 'https://github.com/williamgladston/Inshare',
+    github: 'https://github.com/williamgladston/Inshare',
+    live: 'https://github.com/williamgladston/Inshare',
+    points: [
+      'Built file sharing via secure links/email',
+      'Implemented 24-hour expiry system',
+      'Designed clean download UI',
+      'Used Multer + MongoDB for file handling'
+    ]
   },
   {
     id: 4,
     title: 'Bank Transaction System',
-    description:
-      'Backend system simulating real-world banking operations with secure transaction APIs.',
     tech: ['Node.js', 'Express', 'MongoDB'],
-    url: 'https://backend-ledger-t9p6.onrender.com',
-  },
-  {
-    id: 5,
-    title: 'Windows XP Portfolio',
-    description:
-      'Interactive OS-style portfolio with multiple working apps and animations.',
-    tech: ['React', 'Tailwind', 'GSAP', 'Framer Motion'],
-    url: 'https://williamgladston.github.io/win-xp/',
-  },
+    github: 'https://github.com/williamgladston/backend-ledger',
+    live: 'https://backend-ledger-t9p6.onrender.com',
+    points: [
+      'Simulated banking system with secure APIs',
+      'Built deposit/withdraw APIs',
+      'Handled 1000+ transactions',
+      'Optimized DB schema for performance'
+    ]
+  }
 ];
